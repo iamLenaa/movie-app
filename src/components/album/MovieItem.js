@@ -7,7 +7,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 export default function MovieItem(props) {
     return (
-        <Card sx={{ maxWidth: 450 }}>
+        <Card sx={{ maxWidth: 300 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
@@ -16,7 +16,7 @@ export default function MovieItem(props) {
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        {props.movie_name}
+                        {props.movie_name} {props.movie_rating}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         {props.movie_desc}
